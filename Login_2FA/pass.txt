@@ -1,5 +1,0 @@
-mo --> 123
-haji --> 123
-tom --> 123
-rachel --> 123
-rachel --> 123
