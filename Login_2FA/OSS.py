@@ -1,9 +1,8 @@
-#importing random libarary to give us random number
-import random 
+#importing Pyotp libarary to give us random otp number
+import pyotp
 
-#defining the range for our one time password number
-otp = random.randrange(1000, 10000) 
-
+#create otp verible to generate a code
+otp = pyotp.TOTP('base32secret3232')
 #create register function to define how user registers new account
 def Register():
 
@@ -80,26 +79,23 @@ while True:
         while True: 
             # if the user completes the login steps successfully then open otp.txt or create file if the file is not there
             otp_file = open('otp.txt', 'a')
-            # write data onto otp file 
-            otp_file.write(f'One Time Password: {otp}' "\n")
+            # write otp generate code onto otp file 
+            otp_file.write(f'One Time Password: {otp.now()}' "\n")
             #close otp file 
             otp_file.close()
 
             #create code veriable to input otp code 
             code = input('> Please Enter Your One Time Password:')
-            #open otp file in read mode 
-            otp_file = open('otp.txt','r').read()
-            # if statment to check if the code is in the file 
-            if code in otp_file:
-                #output access granted if the code entred is correct 
+            
+            # if statment to check the input code matches the generated code
+            if otp.verify(code) == True:
+                #output access granted if the code entred is correct if you take too long to input the code the system will generate new code
                 print('> Access Granted!!!')
                 break
             else:
                 #output access denied if the code entred is incorrect 
                 print('> Access Denied!!!')
             continue     
-        
-        
     else:
         # error output to tell user to entier signup or login
         print('> Error, enter a valid input: (signup or login)')
