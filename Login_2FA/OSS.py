@@ -1,5 +1,11 @@
 #importing Pyotp libarary to give us random otp number
 import pyotp
+#importing Pyotp libarary to give us random otp number
+from password_validator import PasswordValidator
+#create schema verible to set our password target
+schema = PasswordValidator()
+# initialise the requirment for sound password
+schema.min(8).max(15).has().lowercase().has().uppercase().has().digits()
 
 #create otp verible to generate a code
 otp = pyotp.TOTP('base32secret3232')
@@ -10,31 +16,40 @@ def Register():
  while True: 
 
     #username variable so user can input name
-    username = input('> Enter username: ')
+    username = input('> Enter Username: ')
 
-    #password variable so user can input name
+    #password variable so user can input password 
     password = input('> Enter Password: ')
+    # schema check if the password meets the complexity requirment
+    schema.validate(password)
 
     #confirm password variable so user can confirm password
     confirm_password = input('> Confirm Password: ')
+    # schema check if the password meets the complexity requirment
+    schema.validate(confirm_password)
 
-    #if statement to check if password is same as confirm password
-    if password == confirm_password:
-        #open pass.txt in appen mode and store user username and password
-        password_file = open('pass.txt', 'a')
-        password_file.write(f'{username} --> {confirm_password}' "\n")
-        password_file.close()
+    # if stament to check if the password meets complexity requriment 
+    if schema.validate(confirm_password) == True:
+        #if statement to check if password is same as confirm password
+        if password == confirm_password :
+            #open pass.txt in appen mode and store user username and password
+            password_file = open('pass.txt', 'a')
+            password_file.write(f'{username} --> {confirm_password}' "\n")
+            password_file.close()
 
-        #output to tell us if the user created the account successfuly
-        print('> Account Created Successfully!')
-        break
-        #else if statment if the password dont match up with confirm password
-    elif password != confirm_password:
+            #output to tell us if the user created the account successfuly
+            print('> Account Created Successfully!')
+            break
+            #else if statment if the password dont match up with confirm password
+        elif password != confirm_password:
 
 
-        # output if the both passwords dont match 
-        print('> Error, Passwords do not match')
-        continue
+            # output if the both passwords dont match 
+            print('> Error, Passwords do not match')
+            continue
+    else:
+        # output if your password dont match complexity requirement 
+        print("Password dose not meet complexity requirement! please try again")
 
 #create Login function to define how user login after the account is created
 def Login():
