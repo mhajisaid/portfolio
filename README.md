@@ -56,7 +56,22 @@ The program asks the user to choose between signing up for a new account or logg
 <span class="image fit"><img src="images/motp.PNG" alt="" /></span>
 
 
+<<<<<<< HEAD
 ## program demonstration video
+=======
+
+#create otp verible to generate a code
+otp = pyotp.TOTP('base32secret3232')
+#create complexity verible to set our password target
+complexity = PasswordValidator()
+#initialise the requirment for sound password
+complexity.min(8).max(15).has().lowercase().has().uppercase().has().digits()
+
+
+
+
+## testing
+>>>>>>> 4d2295f (hello)
 
 <img src="images/video.gif">
 
