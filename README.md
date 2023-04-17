@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Online Shopping System using OTP and password validator
 
 ## Online shopping system that allows users to register and login with two security techniques by ensuring that passwords meet certain complexity requirements, and generates a one-time password for authentication
