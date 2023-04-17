@@ -32,22 +32,22 @@ This program uses PyOTP and password_validator libraries to generate OTP codes a
 ### Creating variables for imported libraries:
 The PyOTP library uses a OTP variable to generate random OTP codes, while the Password Validator library uses a complexity variable to define the password complexity requirements.
 
-<span class="image fit"><img src="images/libv.PNG" alt="" /></span>
+<span class="image fit"><img src="images/libv.png" alt="" /></span>
 
 ### Registration function and Password validation definiation:
 The Register function in the program prompts the user to input a username and password, validates the password complexity requirements using the password_validator library, and stores the username and password in pass.txt if the password meets the requirements.
 
-<span class="image fit"><img src="images/regf.PNG" alt="" /></span>
+<span class="image fit"><img src="images/regf.png" alt="" /></span>
 
 ### Login function:
 The Login function in the program prompts the user to input their username and password, compares it to the information stored in a pass.txt, and grants access if the information matches or denies access if it does not match.
 
- <span class="image fit"><img src="images/lfun.PNG" alt="" /></span>
+ <span class="image fit"><img src="images/lfun.png" alt="" /></span>
 
 ### Main program body and OTP definition:
 The program asks the user to choose between signing up for a new account or logging into an existing account by prompting them to enter either "signup" or "login", it also contains OTP verification to ensure secure user authentication during login.
 
-<span class="image fit"><img src="images/motp.PNG" alt="" /></span>
+<span class="image fit"><img src="images/motp.png" alt="" /></span>
 
 ## program demonstration video
 
