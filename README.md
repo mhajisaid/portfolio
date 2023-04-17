@@ -55,11 +55,11 @@ The program asks the user to choose between signing up for a new account or logg
 
 <span class="image fit"><img src="images/motp.png" alt="" /></span>
 
-## program video demonstration 
+## Program video demonstration 
 
 <img src="images/video.gif">
 
-## usage
+## Usage
 
 1. The user launches the application and is presented with the option to either register or login.
 
