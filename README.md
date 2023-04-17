@@ -44,7 +44,7 @@ The program asks the user to choose between signing up for a new account or logg
 
 <span class="image fit"><img src="images/motp.png" alt="" /></span>
 
-## program demonstration video
+## program video demonstration 
 
 <img src="images/video.gif">
 
