@@ -1,14 +1,11 @@
-
 # Online Shopping System using OTP and password validator
 
 ## Online shopping system that allows users to register and login with two security techniques by ensuring that passwords meet certain complexity requirements, and generates a one-time password for authentication
 
-
 ## Introduction:
 
 In relation to the previous assignment, this project aims to demonstrate solutions for cyber security issues that may arise for an online shopping system. As previously mentioned in the Online Shopping System proposal, one of the main security concerns outlined in the STRIDE threat modelling framework was Spoofing. Spoofing refers to the fraudulent practice of impersonating another entity, individual, or system with the intention of deceiving or misleading a user; Cybercriminals may attempt to gain access to sensitive information or carry out unauthorized actions by using false credentials to impersonate legitimate users (Shostack, 2014, p. 64). 
-To mitigate this risk, this project implements two-factor authentication (2FA) using Python. The two methods demonstrated in this project are One Time Password (OTP) and setting Password complexity requirment. 
-
+To mitigate this risk, this project implements two-factor authentication (2FA) using Python. The two methods demonstrated in this project are One Time Password (OTP) and setting Password complexity requirement. 
 
 ## One Time Password:
 
@@ -32,7 +29,6 @@ This program uses PyOTP and password_validator libraries to generate OTP codes a
 
 <span class="image fit"><img src="images/lib.PNG" alt="" /></span>
 
-
 ### Creating variables for imported libraries:
 The PyOTP library uses a OTP variable to generate random OTP codes, while the Password Validator library uses a complexity variable to define the password complexity requirements.
 
@@ -43,35 +39,17 @@ The Register function in the program prompts the user to input a username and pa
 
 <span class="image fit"><img src="images/regf.PNG" alt="" /></span>
 
-
 ### Login function:
 The Login function in the program prompts the user to input their username and password, compares it to the information stored in a pass.txt, and grants access if the information matches or denies access if it does not match.
 
  <span class="image fit"><img src="images/lfun.PNG" alt="" /></span>
-
 
 ### Main program body and OTP definition:
 The program asks the user to choose between signing up for a new account or logging into an existing account by prompting them to enter either "signup" or "login", it also contains OTP verification to ensure secure user authentication during login.
 
 <span class="image fit"><img src="images/motp.PNG" alt="" /></span>
 
-
-<<<<<<< HEAD
 ## program demonstration video
-=======
-
-#create otp verible to generate a code
-otp = pyotp.TOTP('base32secret3232')
-#create complexity verible to set our password target
-complexity = PasswordValidator()
-#initialise the requirment for sound password
-complexity.min(8).max(15).has().lowercase().has().uppercase().has().digits()
-
-
-
-
-## testing
->>>>>>> 4d2295f (hello)
 
 <img src="images/video.gif">
 
@@ -92,50 +70,3 @@ complexity.min(8).max(15).has().lowercase().has().uppercase().has().digits()
 7. The system validates the one-time password and if it matches, grants the user access to the shopping system.
 
 8. If the user enters an incorrect one-time password, the system denies access and prompts the user to enter a new one.
-=======
-# Online Shopping System using OTP and password validator
-
-## using two seciruty techniques to strengthen the security of customer data 
-
-intro
-
-## solution 1
-
-## soltuion 2
-
-## code 
-
-Importing libraries 
-<style>
-    img{
-        width: 500px;
-    }
-</style>
-<span class="image fit"><img src="images/lib.PNG" alt="" /></span>
-
-
- Creating variables for imported libraries
-
-<span class="image fit"><img src="images/libv.PNG" alt="" /></span>
-
- Registration function and Password validation definiation
-
-<span class="image fit"><img src="images/regf.PNG" alt="" /></span>
-
-
- Login function
-
- <span class="image fit"><img src="images/lfun.PNG" alt="" /></span>
-
-
-Main program body and OTP definition
-
-<span class="image fit"><img src="images/motp.PNG" alt="" /></span>
-
-
-## testing
-
-<img src="images/video.gif">
-
-## usage
->>>>>>> ab01893c0f2ee7dee2aa810063cd1df2ab4a7c10
