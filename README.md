@@ -16,11 +16,6 @@ To overcome the main issues associated with relying on passwords and to ensure a
 ## code decomposition
 ### Installing libraries:
 Libraries such as pyotp and password_validator need to be installed for the application to run.
-<style>
-    img{
-        width: 500px;
-    }
-</style>
 
 <span class="image fit"><img src="images/install_libraries.PNG" alt="" /></span>
 
