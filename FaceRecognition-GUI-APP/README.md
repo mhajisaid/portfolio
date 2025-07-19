@@ -3,7 +3,7 @@
 This project presents a comprehensive biometric security system that uses real-time facial recognition for user authentication. It is fortified with a robust, multi-modal spoofing attack detection mechanism to prevent unauthorized access via presentation attacks (e.g., using photos or videos). The system features a secure database backend and a full-featured administrator panel for user management and security auditing, all wrapped in an intuitive graphical user interface (GUI).
 
 **Homepage component:**  
-<img src="./Images/register page.png" width=374 height=521>  
+<img src="./Images/homepage.png" width=374 height=521>  
 
 **Registering component:**  
 <img src="./Images/register page.png" width=374 height=521>  
