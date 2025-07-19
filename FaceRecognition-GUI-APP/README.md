@@ -21,7 +21,7 @@ This project presents a comprehensive biometric security system that uses real-t
 <img src="./Images/face recognition page .png" width=374 height=521> 
   
 **application demo:**  
-<img src="./Images/Application Demo.gif">
+<img src="./Images/CApplication-Demo.gif">
 
 **Link to full demo on Onedrive share:** https://1drv.ms/v/c/6f8cc5e3f75fcf01/EeTU98Y7vK5Gmb1W44UmmKoBZmZwVCGS9iWPZHbZJtD6Tg?e=vRegLr 
 
