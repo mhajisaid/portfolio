@@ -2,25 +2,25 @@
 ## Project Overview
 This project presents a comprehensive biometric security system that uses real-time facial recognition for user authentication. It is fortified with a robust, multi-modal spoofing attack detection mechanism to prevent unauthorized access via presentation attacks (e.g., using photos or videos). The system features a secure database backend and a full-featured administrator panel for user management and security auditing, all wrapped in an intuitive graphical user interface (GUI).
 
-**Homepage component:**  
+**Homepage:**  
 <img src="./Images/homepage.png" width=374 height=521>  
 
-**Registering component:**  
+**Registering Page:**  
 <img src="./Images/register page.png" width=374 height=521>  
 
-**Face capture component:**  
+**Face Capture Page:**  
 <img src="./Images/face capture page .png" width=374 height=521>
 
-**Train model component:**  
+**Train Model Page:**  
 <img src="./Images/train model page.png" width=374 height=521>
 
-**Login component:**  
+**Login Page:**  
 <img src="./Images/login page.png" width=374 height=521>  
 
-**Face recognition component:**  
+**Face Recognition Page:**  
 <img src="./Images/face recognition page .png" width=374 height=521> 
   
-**application demo:**  
+**Application Demo:**  
 <img src="./Images/CCA.gif">
 
 **Link to full demo on Onedrive share:** https://1drv.ms/v/c/6f8cc5e3f75fcf01/EeTU98Y7vK5Gmb1W44UmmKoBZmZwVCGS9iWPZHbZJtD6Tg?e=vRegLr 
